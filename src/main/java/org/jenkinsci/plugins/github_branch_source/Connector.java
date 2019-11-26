@@ -571,7 +571,7 @@ public class Connector {
     /*package*/
     static void checkApiRateLimit(@NonNull TaskListener listener, GitHub github)
             throws IOException, InterruptedException {
-        boolean check = true;
+        boolean check = false;
         while (check) {
             check = false;
             long start = System.currentTimeMillis();
